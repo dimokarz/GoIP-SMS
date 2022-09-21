@@ -11,7 +11,9 @@ selCan = {1: 223, 2: 212, 3: 213, 4: 214, 5: 215}
 
 В словаре ```selCan``` задаются соответствия номеров каналов и абонементов
 
-## Отредактировать ```ari.conf```:
+## Для настройки Asterisk REST Interface (ARI):
+
+Отредактировать ```ari.conf```:
 
 ```
 [general]
@@ -24,8 +26,6 @@ type = user
 read_only = no
 password = asterisk
 ```
-
-## Для настройки Asterisk REST Interface (ARI):
 
 Отредактировать ```http.conf```:
 ```
