@@ -74,7 +74,7 @@ def getMess(simNum):
 
 
 for currCan, currNum in selCan.items():
-    print(currNum)
+    # print(currNum)
     for tStr in getMess(currCan):
         if len(tStr['num']) > 0:
             fStr = tStr['num'] + ' ' + tStr['mess']
@@ -82,7 +82,7 @@ for currCan, currNum in selCan.items():
             url = ariSend.format(tStr['num'][1:], currNum, fStr)
             #print(url)
             resp = requests.put(url, headers=headers)
-            print(resp.status_code)
+            # print(resp.status_code)
     url = 'http://{}:{}@{}{}'.format(goipUsr, goipPass, goipAddr, goipDel)
     url = url.format(currCan)
     #print(url)
