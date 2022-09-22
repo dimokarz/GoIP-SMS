@@ -25,7 +25,7 @@ _В словаре ```selCan``` задаются соответствия ном
 [general]
 enabled = yes
 pretty = yes
-allowed_origins = localhost:8088,http://ari.asterisk.org,localhost:8088,localhost:8081
+allowed_origins = localhost:8088
 
 [asterisk]
 type = user
